@@ -1,5 +1,12 @@
+import { AboutDama } from "../AboutDama";
+import { Banner } from "../Banner";
 import "./styles.scss";
 
 export function Main() {
-  return <main>Main</main>;
+  return (
+    <>
+      <Banner />
+      <AboutDama />
+    </>
+  );
 }

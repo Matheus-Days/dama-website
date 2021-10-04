@@ -1,0 +1,82 @@
+#banner {
+  background-color: black;
+  color: #ffffff;
+  height: 920px;
+
+  display: grid;
+  gap: -1px;
+  grid-template-columns: 1083px 1fr;
+  grid-template-rows: 864px 56px;
+  align-items: center;
+
+  .banner-img {
+    grid-row: 1 / 3;
+    grid-column: 1;
+  }
+
+  .text {
+    grid-column: 2;
+    margin-left: 32px;
+    width: 520px;
+
+    h1 {
+      font-family: Cairo, sans-serif;
+      font-weight: 400;
+      font-size: 55px;
+      line-height: 60px;
+    }
+
+    p {
+      font-family: Raleway, sans-serif;
+      font-size: 22px;
+      line-height: 25px;
+      font-weight: 300;
+      margin-top: 22px;
+    }
+  }
+
+  a {
+    grid-column: 2;
+    grid-row: 2 / 3;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #265ca8;
+
+    padding: 6px;
+    margin-left: -1px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20%;
+
+    .push-chevron-down,
+    span {
+      margin: 0 32px;
+    }
+
+    .push-chevron-down {
+      height: 27px;
+    }
+
+    &:hover #chevron {
+      animation-name: chevron-down;
+      animation-fill-mode: forwards;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+
+      @keyframes chevron-down {
+        from {
+          transform: translateY(-2px);
+        }
+        to {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+}

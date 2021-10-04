@@ -1,0 +1,15 @@
+#chevron {
+  transform: translateY(-2px);
+  animation-name: chevron-up;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes chevron-up {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(-2px);
+  }
+}

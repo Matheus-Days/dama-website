@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  padding: 1.5rem 4rem 0 0;
+
+  img {
+    margin-right: 2rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      font-family: Sora, sans-serif;
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 0 1rem;
+    }
+  }
+}

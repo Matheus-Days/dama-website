@@ -1,11 +1,11 @@
-import logoPng from "../../assets/img/logo.png";
+import LogoLightSvg from "../../assets/img/logo-light.svg";
 
 import "./styles.scss";
 
 export function Header() {
   return (
     <header>
-      <img src={logoPng} alt="Audo logo" />
+      <img src={LogoLightSvg} alt="Audo logo" />
       <nav>
         <a href="#aboutDama">Conheça a DAMA</a>
         <a href="#benefits">Vantagens</a>

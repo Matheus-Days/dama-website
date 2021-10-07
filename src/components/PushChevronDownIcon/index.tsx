@@ -8,22 +8,35 @@ export function PushChevronDownIcon({ className }: Props) {
   return (
     <svg
       className={className}
-      width="28"
-      height="28"
-      viewBox="0 0 24 24"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      width="24.228"
+      height="18.367"
+      viewBox="0 0 24.228 18.367"
     >
-      <path
-        id="chevron"
-        d="M5 7.41421L6.41421 6L12.0711 11.6569L17.7279 6L19.1421 7.41421L12.0711 14.4853L5 7.41421Z"
-        fill="currentColor"
-      />
-      <path
-        id="bar"
-        d="M19 16.3432H5V18.3432H19V16.3432Z"
-        fill="currentColor"
-      />
+      <g
+        id="Group_414"
+        data-name="Group 414"
+        transform="translate(1969.835 1431.006)"
+      >
+        <line
+          id="Line_18"
+          data-name="Line 18"
+          x2="24.228"
+          transform="translate(-1969.835 -1413.639)"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="2"
+        />
+        <path
+          id="chevron"
+          data-name="Path 650"
+          d="M-1948.187-1427.3l-10.115,10.115-10.115-10.115"
+          transform="translate(0.581 -3)"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="2"
+        />
+      </g>
     </svg>
   );
 }

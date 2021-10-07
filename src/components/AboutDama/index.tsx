@@ -1,5 +1,8 @@
-import FeaturePng from "../../assets/img/feature.png";
 import Fold2Png from "../../assets/img/Fold2_IMG.png";
+import AimSvg from "../../assets/img/aim.svg";
+import ClipboardSvg from "../../assets/img/clipboard.svg";
+import ClipboardOutSvg from "../../assets/img/clipboard-out.svg";
+import ConnectedDotsSvg from "../../assets/img/connected-dots.svg";
 
 import "./styles.scss";
 
@@ -30,26 +33,29 @@ export function AboutDama() {
         <h2>Com DAMA você tem....</h2>
         <ul>
           <li>
-            <img src={FeaturePng} alt="Mira certeira" />
+            <img src={AimSvg} alt="Detecçao e identificação" />
             <span>
               <b>Detecção e identificação</b> de anomalias em mamografias
               digitais
             </span>
           </li>
           <li>
-            <img src={FeaturePng} alt="Mira certeira" />
+            <img src={ClipboardSvg} alt="Relatório médico" />
             <span>
               Relatório médico <b>preliminar</b> por imagem
             </span>
           </li>
           <li>
-            <img src={FeaturePng} alt="Mira certeira" />
+            <img src={ClipboardOutSvg} alt="sugestão de diagnóstico" />
             <span>
               Sugestão de diagnóstico <b>BIRADS</b>
             </span>
           </li>
           <li>
-            <img src={FeaturePng} alt="Mira certeira" />
+            <img
+              src={ConnectedDotsSvg}
+              alt="Aprendizado sistema de inteligência artificial"
+            />
             <span>
               <b>Aprendizado contínuo</b> do sistema de inteligência artificial
             </span>

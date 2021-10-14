@@ -1,12 +1,18 @@
 import React from "react";
-import { render } from "react-snapshot";
+import { render, hydrate } from "react-dom";
 import App from "./App";
 
-import "./global.scss";
+import "./style/global.scss";
 
-render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const rootElement = document.getElementById("root") as HTMLDivElement;
+
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    rootElement
+  );
+}

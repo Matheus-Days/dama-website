@@ -1,9 +1,9 @@
-import { AboutDama } from "../AboutDama";
 import { Banner } from "../Banner";
-import { Contact } from "../Contact";
+import { AboutDama } from "../AboutDama";
 import { LaudoEstruturado } from "../LaudoEstruturado";
-import { NovaMetodologia } from "../NovaMetodologia";
-import "./styles.scss";
+// import { NovaMetodologia } from "../NovaMetodologia";
+import { AboutAudo } from "../AboutAudo";
+import { Contact } from "../Contact";
 
 export function Main() {
   return (
@@ -11,8 +11,9 @@ export function Main() {
       <Banner />
       <AboutDama />
       <LaudoEstruturado />
-      <NovaMetodologia />
+      {/* <NovaMetodologia /> */}
       <Contact />
+      <AboutAudo />
     </>
   );
 }

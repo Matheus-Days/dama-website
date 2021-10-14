@@ -1,5 +1,7 @@
 import { LegacyRef } from "react";
 import ReactPlayer from "react-player";
+import { useBreakpointValue } from "@chakra-ui/react";
+
 import "./styles.scss";
 
 type Props = {
@@ -8,12 +10,21 @@ type Props = {
 };
 
 export function Player({ setPlayedSeconds, playerRef }: Props) {
+  const width = useBreakpointValue({
+    base: "90vw",
+    lg: "60vw",
+  });
+  const height = useBreakpointValue({
+    base: "calc(90vw / 1.4)",
+    lg: "calc(60vw / 1.4)",
+  });
+
   return (
     <ReactPlayer
       id="player"
-      width={1128}
-      height={803}
-      url="https://www.youtube.com/watch?v=t0IJiofPR6U"
+      width={width}
+      height={height}
+      url="https://youtu.be/jNQXAC9IVRw"
       // playing
       light
       ref={playerRef}

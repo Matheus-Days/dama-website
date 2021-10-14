@@ -1,26 +1,61 @@
-import "./styles.scss";
+import {
+  Box,
+  Button,
+  Grid,
+  GridItem,
+  Heading,
+  Input,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
+import {
+  gridProps,
+  headingProps,
+  formStackProps,
+  textGridItemProps,
+  textProps,
+  inputProps,
+  buttonProps,
+} from "./props";
 
 export function Contact() {
   return (
-    <div id="contact">
-      <div className="contact-text">
-        <h3>Vamos começar a otimizar o seu tempo?</h3>
-        <p>
+    <Grid id="contact" {...gridProps}>
+      <GridItem {...textGridItemProps}>
+        <Heading {...headingProps}>
+          Vamos começar a otimizar o seu tempo?
+        </Heading>
+        <Text {...textProps}>
           <b>
             Vem descobrir como a DAMA pode ser a sua maior parceira na
             construção dos seus laudos!
           </b>{" "}
           Preencha o seu cadastro e em até 24hrs estaremos disponibilizando uma
           versão de teste.
-        </p>
-      </div>
-      <form action="/" method="POST">
-        <input type="text" placeholder="Nome Completo" />
-        <input type="tel" placeholder="Telefone para contato" />
-        <input type="email" placeholder="E-mail" />
-        <input type="text" placeholder="Profissão" />
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+        </Text>
+      </GridItem>
+      <GridItem
+        gridColumn={{ base: "1", lg: "2" }}
+        gridRow={{ base: "2", lg: "1" }}
+      >
+        <Box bg="red.500" h="100%">
+          <form action="/" method="POST">
+            <Stack {...formStackProps}>
+              <Input type="text" placeholder="Nome Completo" {...inputProps} />
+              <Input
+                type="tel"
+                placeholder="Telefone para contato"
+                {...inputProps}
+              />
+              <Input type="email" placeholder="E-mail" {...inputProps} />
+              <Input type="text" placeholder="Profissão" {...inputProps} />
+              <Button type="submit" {...buttonProps}>
+                Enviar
+              </Button>
+            </Stack>
+          </form>
+        </Box>
+      </GridItem>
+    </Grid>
   );
 }

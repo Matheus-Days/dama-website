@@ -1,14 +1,13 @@
 import { useEffect } from "react";
-import { VideoChapter } from "../VideoChapter";
+import { HStack } from "@chakra-ui/react";
 
-import "./styles.scss";
+import { VideoChapter } from "../VideoChapter";
 import { SummaryDataType } from "../../utils/summaryData";
 
 type Props = {
   selectedChapter: number;
   id: string;
   summaryData: SummaryDataType;
-  setChapter: (number: number) => void;
   onChapterClick?: (position: number) => void;
 };
 
@@ -17,7 +16,6 @@ export function Summary({
   selectedChapter,
   summaryData,
   onChapterClick = (position: number) => {},
-  setChapter,
 }: Props) {
   useEffect(() => {
     const summary = document.getElementById(id) as HTMLElement;
@@ -28,13 +26,18 @@ export function Summary({
       selectedChapter
     ] as HTMLElement;
 
-    summary.style.left = `calc(50% - ${
+    summary.style.left = `calc(${summary.clientWidth / 2}px - ${
       currentChapterElement.clientWidth / 2 + movement * selectedChapter
     }px)`;
   }, [selectedChapter, id]);
 
   return (
-    <div id={id}>
+    <HStack
+      id={id}
+      spacing={{ base: "4px", sm: "8px" }}
+      position="relative"
+      transition="left 0.5s ease-in-out"
+    >
       {summaryData.map((chapter, i) => (
         <VideoChapter
           key={i}
@@ -47,6 +50,6 @@ export function Summary({
           {chapter.description}
         </VideoChapter>
       ))}
-    </div>
+    </HStack>
   );
 }

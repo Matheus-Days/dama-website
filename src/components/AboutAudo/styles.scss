@@ -1,0 +1,43 @@
+#about-audo {
+  background-image: url(../../assets/img/Audo_IMG.png);
+  background-position: center;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 931px;
+  max-width: 1920px;
+  padding: 100px 360px;
+
+  h3 {
+    font-size: 55px;
+    line-height: 60px;
+    font-family: Cairo, sans-serif;
+    font-weight: 700;
+  }
+
+  p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+  }
+
+  .logo-and-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px;
+    color: #040505;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    padding: 15px 110px;
+    background-color: #fff;
+  }
+}

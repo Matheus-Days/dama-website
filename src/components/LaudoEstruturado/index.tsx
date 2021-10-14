@@ -1,7 +1,7 @@
-import { CSSProperties, useRef } from "react";
+import { useRef } from "react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
-import "./styles.scss";
-import PadlockPng from "../../assets/img/Vantagens_IMG.png";
+import { containerProps, headingProps, textProps } from "./props";
 
 import { VideoWithSummary } from "../VideoWithSummary";
 import { ResultadosInteligencia } from "../ResultadosInteligencia";
@@ -9,36 +9,20 @@ import { Benefits } from "../Benefits";
 
 export function LaudoEstruturado() {
   const titleAndVideoRef = useRef<HTMLDivElement>(null);
-  let dynamicStyle = {};
-
-  if (titleAndVideoRef.current) {
-    dynamicStyle = {
-      left: `calc(50vw - ${titleAndVideoRef.current?.clientWidth / 2}px)`,
-    } as CSSProperties;
-  }
 
   return (
-    <section id="laudo-estruturado">
-      <div
-        ref={titleAndVideoRef}
-        style={dynamicStyle}
-        className="title-and-video"
-      >
-        <h2>Laudo estruturado</h2>
-        <p>
+    <Flex as="section" direction="column" id="laudo-estruturado">
+      <Flex ref={titleAndVideoRef} {...containerProps}>
+        <Heading as="h2" {...headingProps}>
+          Laudo estruturado
+        </Heading>
+        <Text {...textProps}>
           Acompanhe o processo rápido, intuitivo e dinâmico que a DAMA oferece
-        </p>
+        </Text>
         <VideoWithSummary />
-      </div>
-      <div id="results">
-        <ResultadosInteligencia />
-      </div>
-      <div id="benefits">
-        <Benefits />
-      </div>
-      <div id="padlock">
-        <img src={PadlockPng} alt="Padlock" />
-      </div>
-    </section>
+      </Flex>
+      <ResultadosInteligencia />
+      <Benefits />
+    </Flex>
   );
 }

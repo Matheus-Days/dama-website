@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import { VStack } from "@chakra-ui/react";
+import ReactPlayer from "react-player";
 
-import "./styles.scss";
 import { summaryData } from "../../utils/summaryData";
 
 import { Player } from "../Player";
 import { Summary } from "../Summary";
-import ReactPlayer from "react-player";
 
 export function VideoWithSummary() {
   const [playedSeconds, setPlayedSeconds] = useState(0);
@@ -32,15 +32,14 @@ export function VideoWithSummary() {
   }, [playedSeconds, chaptersPositions]);
 
   return (
-    <>
+    <VStack overflowX="hidden" spacing={{ base: "60px", lg: "66px" }}>
       <Player playerRef={player} setPlayedSeconds={setPlayedSeconds} />
       <Summary
         id="summary"
         summaryData={summaryData}
         selectedChapter={chapter}
-        setChapter={setChapter}
         onChapterClick={handleChapterClick}
       />
-    </>
+    </VStack>
   );
 }

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "./styles.scss";
+import { Box, Heading, Text } from "@chakra-ui/react";
 
 type Props = {
   number: string;
@@ -34,14 +34,33 @@ export function VideoChapter({
   }, [selectedChapter, chapterNumber]);
 
   return (
-    <div
-      className="chapter"
+    <Box
       ref={divRef}
       onClick={() => onChapterClick(videoPosition)}
+      textAlign="center"
+      minW={{ base: "227px", lg: "392px" }}
     >
-      <span className="chapter-number">{number}</span>
-      <span className="chapter-title">{title}</span>
-      <span className="chapter-description">{children}</span>
-    </div>
+      <Heading
+        color="white"
+        fontSize={{ base: "28px", sm: "31px", lg: "48px", "2xl": "55px" }}
+        as="h4"
+      >
+        {number}
+        <Heading
+          as="span"
+          fontSize={{ base: "13px", sm: "16px", lg: "24px", "2xl": "30px" }}
+        >
+          {title}
+        </Heading>
+      </Heading>
+      <Text
+        color="white"
+        fontSize={{ base: "14px", sm: "17px", lg: "18px", "2xl": "20px" }}
+        lineHeight="22px"
+        mt={{ base: "4px", sm: "8px" }}
+      >
+        {children}
+      </Text>
+    </Box>
   );
 }

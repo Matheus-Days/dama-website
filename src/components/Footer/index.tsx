@@ -9,8 +9,6 @@ import EmailSvg from "../../assets/img/email.svg";
 import InstagramSvg from "../../assets/img/instagram.svg";
 import FacebookSvg from "../../assets/img/facebook.svg";
 
-import "./styles.scss";
-
 export function Footer() {
   return (
     <footer>

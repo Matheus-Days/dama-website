@@ -9,60 +9,72 @@ import {
 
 export const sectionGridProps = {
   gridTemplateColumns: {
-    base: "36px 1fr",
-    lg: "1fr 633px",
-    xl: "1fr 844px",
+    base: "1fr 355px",
+    md: "1fr 632px",
+    lg: "1fr 437px",
+    xl: "1fr 632px",
+    "2xl": "1fr 843px",
   },
   gridTemplateRows: {
-    base: "306px 1fr 2fr 0.5fr",
-    md: "306px 1fr 1fr 0.3fr",
-    lg: "1fr 1fr 0.55fr",
-    xl: "1fr 1fr 0.7fr",
-    "2xl": "1fr 1fr 1fr",
+    base: "288px 273px 416px 1fr 560px",
+    md: "512px 487px 500px 600px",
+    lg: "384px 365px 1000px",
+    xl: "512px 487px 850px",
+    "2xl": "650px 683px 800px",
   },
   bg: "#F9F5F5",
   mt: "-1px",
 } as GridProps;
 
 export const textItemProps = {
-  px: { base: "40px", lg: "96px" },
+  px: { base: "40px", md: "40px", lg: "32px", xl: "96px", "2xl": "142px" },
+  pr: { md: "160px", lg: "" },
+  pt: { base: "48px", md: "64px", lg: "32px", xl: "96px", "2xl": "142px" },
   gridColumn: { base: "1/3", lg: "1/2" },
-  gridRow: { base: "2/3", lg: "1/2" },
-  zIndex: "10",
+  gridRow: { base: "2/4", lg: "1" },
   display: "flex",
   flexDir: "column",
-  justifyContent: "center",
+  justifyContent: { base: "flex-start", lg: "flex-start" },
+  zIndex: "10",
 } as GridItemProps;
 
 export const headingProps = {
-  fontSize: { base: "43px", lg: "48px" },
-  mt: { base: "64px", lg: "0" },
+  fontSize: { base: "36px", sm: "43px", lg: "32px", xl: "48px", "2xl": "55px" },
+  pr: { md: "80px", lg: "0" },
+  pt: { base: "24px", sm: "" },
   color: "#040505",
 } as HeadingProps;
 
 export const textProps = {
-  fontSize: { base: "17px", md: "20px" },
+  fontSize: { base: "17px", xl: "20px" },
   lineHeight: { base: "22px", md: "25px" },
   color: "#040505",
 } as TextProps;
 
-export const imageItemProps = {
-  gridRow: "1/3",
-  gridColumn: { base: "2/3" },
-  h: { lg: "100%" },
-  w: { base: "100%", lg: "" },
+export const photoItemProps = {
+  gridRow: "1",
+  gridColumn: "2",
+  display: "flex",
+  justifyContent: "flex-end",
+} as GridItemProps;
+
+export const vectorItemProps = {
+  gridRow: "2",
+  gridColumn: "2",
+  display: "flex",
+  justifyContent: "flex-end",
 } as GridItemProps;
 
 export const ulGridItemProps = {
-  gridRow: { base: "3/4", lg: "2/3" },
+  gridRow: { base: "4", md: "3", lg: "2/3" },
   gridColumn: "1/3",
   zIndex: "10",
-  px: { base: "36px", lg: "96px" },
-  mt: { base: "70px" },
+  px: { base: "36px", lg: "80px", "2xl": "144px" },
+  mt: { lg: "112px" },
 } as GridItemProps;
 
 export const ulHeadingProps = {
-  fontSize: { base: "43px", lg: "48px", xl: "50px", "2xl": "55px" },
+  fontSize: { base: "43px", lg: "32x", xl: "50px", "2xl": "55px" },
   color: "#040505",
   pr: { base: "64px", lg: "0" },
 } as HeadingProps;
@@ -71,12 +83,12 @@ export const ulStackProps = {
   wrap: "wrap",
   justifyContent: "center",
   alignItems: "self-start",
-  mt: { base: "23px", lg: "144px" },
+  mt: { base: "23px", lg: "48px" },
 } as StackProps;
 
 export const liStackProps = {
   spacing: { base: "20px", lg: "30px" },
-  pt: { base: "60px", lg: "0" },
+  pt: { base: "60px" },
   mx: { lg: "32px" },
 } as StackProps;
 
@@ -84,7 +96,7 @@ export const liTextProps = {
   color: "#040505",
   maxW: { base: "154px", lg: "246px" },
   textAlign: "center",
-  fontSize: { base: "17px", lg: "20px" },
+  fontSize: { base: "17px", xl: "20px" },
 } as TextProps;
 
 export const contactLinkProps = {

@@ -1,8 +1,8 @@
 import { Banner } from "../Banner";
 import { AboutDama } from "../AboutDama";
 import { LaudoEstruturado } from "../LaudoEstruturado";
-// import { NovaMetodologia } from "../NovaMetodologia";
 import { AboutAudo } from "../AboutAudo";
+import { Product } from "../Product";
 import { Contact } from "../Contact";
 
 export function Main() {
@@ -11,7 +11,7 @@ export function Main() {
       <Banner />
       <AboutDama />
       <LaudoEstruturado />
-      {/* <NovaMetodologia /> */}
+      <Product />
       <Contact />
       <AboutAudo />
     </>

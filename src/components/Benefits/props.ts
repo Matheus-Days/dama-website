@@ -23,6 +23,7 @@ export const accordionGridItemProps = {
   gridColumn: { base: "1", lg: "1/2" },
   gridRow: { base: "2" },
   pl: { base: "36px", lg: "96px" },
+  pr: { base: "36px", lg: "0" },
   pt: { lg: "32px" },
 } as GridItemProps;
 
@@ -37,6 +38,7 @@ export const linkGridItemProps = {
   gridColumn: { base: "1", lg: "1/3" },
   gridRow: "3",
   pl: { base: "36px", lg: "96px" },
+  pt: { base: "32px", md: "64px", lg: "32px" },
   display: "flex",
   alignItems: "flex-end",
 } as GridItemProps;
@@ -57,9 +59,10 @@ export const buttonTextProps = {
   color: "white",
   fontStyle: "italic",
   fontWeight: "light",
-  fontSize: { base: "20px", lg: "24px", xl: "30px", "2xl": "40px" },
-  lineHeight: { base: "30px", lg: "34px", xl: "40px", "2xl": "60px" },
+  fontSize: { base: "14px", md: "20px", lg: "20px", xl: "24px", "2xl": "40px" },
+  lineHeight: { base: "30px", lg: "34px", xl: "34px", "2xl": "60px" },
   borderBottom: "2px solid #fff;",
+  textAlign: { base: "left" },
 } as TextProps;
 
 export const panelTextProps = {

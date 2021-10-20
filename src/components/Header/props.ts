@@ -9,7 +9,7 @@ export const widescreenLinkProps = {
   color: "white",
   fontSize: {
     base: 14,
-    lg: 16,
+    lg: 14,
     xl: 20,
     "2xl": 22,
   },
@@ -84,7 +84,7 @@ export const widescreenHeaderProps = {
 } as FlexProps;
 
 export const widescreenNavProps = {
-  spacing: { lg: "24px", xl: "32px", "2xl": "46px" },
+  spacing: { lg: "16px", xl: "32px", "2xl": "46px" },
   justifyContent: "flex-end",
   alignItems: "center",
 } as StackProps;

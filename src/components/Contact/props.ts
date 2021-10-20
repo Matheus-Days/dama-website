@@ -16,22 +16,42 @@ export const gridProps = {
 export const textGridItemProps = {
   gridColumn: "1",
   gridRow: "1",
-  paddingLeft: { base: "38px", lg: "80px", xl: "112px", "2xl": "142px" },
-  paddingRight: { base: "38px", lg: "96px", xl: "144px", "2xl": "234px" },
-  paddingY: { base: "220px", "2xl": "300px" },
+  paddingLeft: {
+    base: "38px",
+    md: "88px",
+    lg: "80px",
+    xl: "112px",
+    "2xl": "142px",
+  },
+  paddingRight: {
+    base: "38px",
+    md: "88px",
+    lg: "96px",
+    xl: "144px",
+    "2xl": "234px",
+  },
+  paddingY: { base: "230px", "2xl": "300px" },
 } as GridItemProps;
 
 export const headingProps = {
   color: "white",
-  fontSize: { base: "43px", lg: "35px", xl: "45px", "2xl": "55px" },
+  fontSize: { base: "32px", sm: "43px", lg: "35px", xl: "42px", "2xl": "55px" },
   lineHeight: { base: "47px", lg: "40px", xl: "50px", "2xl": "60px" },
+  zIndex: "10",
 } as HeadingProps;
 
 export const textProps = {
   color: "white",
-  fontSize: { base: "17px", lg: "17px", xl: "20px" },
-  lineHeight: { base: "22px", lg: "22px", xl: "25px" },
+  fontSize: { base: "16px", sm: "17px", lg: "17px", xl: "18px", "2xl": "20px" },
+  lineHeight: {
+    base: "16px",
+    sm: "22px",
+    lg: "22px",
+    xl: "23px",
+    "2xl": "25px",
+  },
   mt: "24px",
+  zIndex: "10",
 } as TextProps;
 
 export const formStackProps = {

@@ -1,27 +1,29 @@
-import { useRef } from "react";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 
-import { containerProps, headingProps, textProps } from "./props";
+import {
+  containerProps,
+  headingProps,
+  subtitleProps,
+  textProps,
+} from "./props";
 
-import { VideoWithSummary } from "../VideoWithSummary";
-import { ResultadosInteligencia } from "../ResultadosInteligencia";
+import { LaudoSliders } from "../LaudoSliders";
 import { Benefits } from "../Benefits";
 
 export function LaudoEstruturado() {
-  const titleAndVideoRef = useRef<HTMLDivElement>(null);
-
   return (
     <Flex as="section" direction="column" id="laudo-estruturado">
-      <Flex ref={titleAndVideoRef} {...containerProps}>
+      <Flex {...containerProps}>
         <Heading as="h2" {...headingProps}>
-          Laudo estruturado
+          Laudo estruturado interativo
         </Heading>
+        <Text {...subtitleProps}>seu laudo mais inteligente!</Text>
         <Text {...textProps}>
-          Acompanhe o processo rápido, intuitivo e dinâmico que a DAMA oferece
+          Construímos o laudo automaticamente enquanto você descreve suas
+          impressões diagnósticas.
         </Text>
-        <VideoWithSummary />
+        <LaudoSliders />
       </Flex>
-      <ResultadosInteligencia />
       <Benefits />
     </Flex>
   );

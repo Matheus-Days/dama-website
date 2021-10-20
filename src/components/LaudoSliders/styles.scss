@@ -1,0 +1,39 @@
+#laudo-slider {
+  .slick-slider {
+    position: relative;
+  }
+
+  .slick-prev {
+    color: #575757;
+    font-size: 40px;
+    position: absolute;
+    top: 102%;
+    left: -32px;
+  }
+
+  .slick-next {
+    color: #575757;
+    position: absolute;
+    top: 102%;
+    right: -32px;
+  }
+
+  .slick-dots {
+    li {
+      button {
+        &::before {
+          color: #575757;
+          opacity: 1;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        &::before {
+          color: #ea3716;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

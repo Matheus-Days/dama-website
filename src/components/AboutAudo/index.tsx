@@ -20,22 +20,22 @@ export function AboutAudo() {
           Somos parte de uma rede de inovação
         </Heading>
         <Text {...textProps}>
-          O sistema de diagnóstico DAMA é parte do ecossistema AUDO, que tem por
-          objetivo desenvolver e comercializar soluções eficientes para
-          diagnósticos por imagem. Acreditamos que tecnologia de ponta deve ser
-          acessível para todos.
+          DAMA é parte do ecossistema Audo, que tem por objetivo desenvolver
+          soluções no Diagnóstico por Imagem que ajudam a transformar e salvar
+          vidas através de acesso, inclusão e inovação.
         </Text>
         <Text {...textProps}>
-          Nossos produtos são concebidos entendendo o ecossistema do Diagnóstico
-          por Imagem de maneira integrada, buscando oferecer a melhor
-          experiência para o radiologista e paciente ao mesmo tempo que otimiza
-          a produtividade e a qualidade.
+          Acreditamos que tecnologia de ponta e saúde deve ser acessível a
+          todos.
         </Text>
         <Text {...textProps}>
-          <b>
-            Um mundo de facilidades e tecnologias pensadas para as clínicas,
-            hospitias e radiologistas.
-          </b>
+          Nossos produtos são concebidos para oferecer aos profissionais da
+          radiologia uma experiência focada em processos que garantam
+          produtividade e assertividade, garantindo a segurança dos pacientes,
+          desde a integridade das informações até a conformidade regulatória.
+        </Text>
+        <Text {...textProps}>
+          <b>A menor distância para o seu melhor laudo.</b>
         </Text>
       </GridItem>
       <GridItem {...logoGridItemProps}>

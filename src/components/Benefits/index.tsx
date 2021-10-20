@@ -51,50 +51,54 @@ export function Benefits() {
             </AccordionButton>
             <AccordionPanel>
               <Text {...panelTextProps}>
-                Enquanto nossos competidores cobram em dólar, a DAMA possui
-                custos mais baixos e acessíveis para todos os mercados.
+                A tecnologia de DAMA é totalmente nacional e acessível ao
+                mercado brasileiro.
               </Text>
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem {...accordionItemProps}>
             <AccordionButton>
               <Text {...buttonTextProps}>
-                Sistema de dispositivo inteligente
+                Workstation especializada em mamografia
               </Text>
               <AccordionIcon color="white" width="30px" height="30px" />
             </AccordionButton>
             <AccordionPanel>
               <Text {...panelTextProps}>
-                Nossos produtos não são dependentes de nenhum dispositivo ou
-                revendedor e não é necessário possuir hardwares caros para
-                operar.
-              </Text>
-            </AccordionPanel>
-          </AccordionItem>
-          <AccordionItem {...accordionItemProps}>
-            <AccordionButton>
-              <Text {...buttonTextProps}>Visualizador Web DICON</Text>
-              <AccordionIcon color="white" width="30px" height="30px" />
-            </AccordionButton>
-            <AccordionPanel>
-              <Text {...panelTextProps}>
-                Sistema interno para visualização eficiente de imagens DICOM
-                através de navegadores Chrome. Nós suportamos várias marcas
-                avançadas e tecnologias de reconstrução apenas disponíveis para
-                desktops.
+                A estação de visualização de imagens e elaboração de laudos de
+                DAMA foi construída para exames de mamografia, com hanging
+                protocols específicos, comparação de imagens anteriores e
+                suporte a monitores de diagnóstico.
               </Text>
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem {...accordionItemProps}>
             <AccordionButton>
-              <Text {...buttonTextProps}>Sistema Cloud First</Text>
+              <Text {...buttonTextProps}>
+                Todas as informações em um só lugar
+              </Text>
               <AccordionIcon color="white" width="30px" height="30px" />
             </AccordionButton>
             <AccordionPanel>
               <Text {...panelTextProps}>
-                O sistema completo está integrado na nuvem para melhor
-                performance multi-clínica/hospitalar. Nós também fornecemos
-                suporte para nuvens privadas ou servidores locais.
+                Concentramos imagens, laudos e informações clínicas de diversos
+                sistemas em uma única estação de trabalho. Podemos conectar a
+                qualquer sistema PACS.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+          <AccordionItem {...accordionItemProps}>
+            <AccordionButton>
+              <Text {...buttonTextProps}>
+                A melhor experiência web de visualização de imagens DICOM
+              </Text>
+              <AccordionIcon color="white" width="30px" height="30px" />
+            </AccordionButton>
+            <AccordionPanel>
+              <Text {...panelTextProps}>
+                Nossa plataforma é totalmente web e tem performance similar às
+                tecnologias desktop. Você pode baixar as imagens antes da
+                visualização.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -108,10 +112,24 @@ export function Benefits() {
             <AccordionPanel>
               <Text {...panelTextProps}>
                 Nossa tecnologia de aprendizado contínuo é baseada nos
-                princípios de Explainable AI, ou seja, tornar a Inteligência
+                princípios de Explanaible AI, ou seja, tomar a Inteligência
                 Artificial compreensível para humanos. Dessa maneira as decisões
-                tomadas pelo programa são baseadas em conhecimentos
+                tomadas pelos algoritmos são baseadas em conhecimentos
                 verificáveis.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+          <AccordionItem {...accordionItemProps}>
+            <AccordionButton>
+              <Text {...buttonTextProps}>
+                Interoperabilidade: falamos todas as línguas
+              </Text>
+              <AccordionIcon color="white" width="30px" height="30px" />
+            </AccordionButton>
+            <AccordionPanel>
+              <Text {...panelTextProps}>
+                Nossos produtos não são dependentes de nenhum dispositivo ou
+                fabricante, nem exigem hardwares caros para operar.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -123,7 +141,7 @@ export function Benefits() {
         </GridItem>
       )}
       <GridItem {...linkGridItemProps}>
-        <Link {...linkProps}>
+        <Link href="#product" {...linkProps}>
           Nossos Produtos <PushChevronDownIcon className="push-chevron-down" />
         </Link>
       </GridItem>

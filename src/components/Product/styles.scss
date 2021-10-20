@@ -1,0 +1,108 @@
+#product {
+  .slick-prev {
+    color: #575757;
+    position: absolute;
+  }
+
+  .slick-next {
+    color: #575757;
+    position: absolute;
+  }
+
+  .slick-dots {
+    li {
+      button {
+        &::before {
+          color: #575757;
+          opacity: 1;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        &::before {
+          color: #ea3716;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0) {
+  #product {
+    .slick-dots {
+      position: relative;
+      bottom: 240px;
+    }
+  }
+}
+
+@media (min-width: 48em) {
+  #product {
+    .slick-dots {
+      position: relative;
+      bottom: 208px;
+    }
+  }
+}
+
+@media (min-width: 62em) {
+  #product {
+    .slick-dots {
+      position: relative;
+      top: -240px;
+      left: -35%;
+    }
+
+    .slick-prev {
+      top: 110%;
+      left: 4px;
+    }
+
+    .slick-next {
+      top: 110%;
+      left: 68px;
+    }
+  }
+}
+
+@media (min-width: 80em) {
+  #product {
+    .slick-dots {
+      position: relative;
+      top: -272px;
+      left: calc(-37%);
+    }
+
+    .slick-prev {
+      top: 110%;
+      left: 4px;
+    }
+
+    .slick-next {
+      top: 110%;
+      left: 68px;
+    }
+  }
+}
+
+@media (min-width: 96em) {
+  #product {
+    .slick-dots {
+      position: relative;
+      top: -320px;
+      left: calc(-40%);
+    }
+
+    .slick-prev {
+      top: 110%;
+      left: 0px;
+    }
+
+    .slick-next {
+      top: 110%;
+      left: 64px;
+    }
+  }
+}

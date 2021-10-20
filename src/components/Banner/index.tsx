@@ -31,8 +31,12 @@ export function Banner() {
             <br /> Prevenção inteligente começa <b>aqui.</b>
           </Heading>
           <Text as="p" {...textProps}>
-            Somos uma ferramenta ágil feita para auxiliar profissionais de saúde
-            em exames de mamografia.
+            Somos uma ferramenta baseada em <b>Inteligência Artificial</b> para
+            auxiliar profissionais de saúde em exames de <b>mamografia</b>.
+            <br />
+            <Text as="span" fontSize={{ base: "13px", "2xl": "18px" }}>
+              Registro ANVISA: 82055140002
+            </Text>
           </Text>
         </GridItem>
       </Center>

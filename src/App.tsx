@@ -5,7 +5,7 @@ import { theme } from "./style/theme";
 
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
-// import { Footer } from "./components/Footer";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       </Helmet>
       <Header />
       <Main />
-      {/* <Footer /> */}
+      <Footer />
     </ChakraProvider>
   );
 }

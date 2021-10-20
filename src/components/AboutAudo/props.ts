@@ -31,13 +31,13 @@ export const textGridItemProps = {
 
 export const headingProps = {
   color: "white",
-  fontSize: { base: "43px", lg: "40px", "2xl": "55px" },
+  fontSize: { base: "36px", sm: "43px", lg: "40px", "2xl": "55px" },
   lineHeight: { base: "47px", "2xl": "60px" },
 } as HeadingProps;
 
 export const textProps = {
   color: "white",
-  fontSize: { base: "17px", lg: "16px", xl: "20px" },
+  fontSize: { base: "14px", sm: "17px", lg: "16px", xl: "20px" },
   lineHeight: { base: "22px", lg: "21px", xl: "25px" },
   mt: { base: "17px", "2xl": "20px" },
 } as TextProps;
@@ -50,11 +50,11 @@ export const logoGridItemProps = {
   justifyContent: { base: "flex-start", lg: "center" },
   alignItems: { base: "center", lg: "flex-start" },
   pl: { xl: "140px", "2xl": "224px" },
-  pt: { base: "40px", lg: "0" },
+  pt: { base: "16px", md: "0" },
 } as GridItemProps;
 
 export const imageProps = {
-  w: { base: "217px", xl: "max-content" },
+  w: { base: "173px", sm: "217px", xl: "max-content" },
 } as ImageProps;
 
 export const linkProps = {

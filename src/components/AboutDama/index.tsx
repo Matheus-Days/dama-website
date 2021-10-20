@@ -13,7 +13,8 @@ import {
 import {
   contactLinkProps,
   headingProps,
-  imageItemProps,
+  photoItemProps,
+  vectorItemProps,
   liStackProps,
   liTextProps,
   sectionGridProps,
@@ -24,7 +25,8 @@ import {
   ulStackProps,
 } from "./props";
 
-import Fold2Png from "../../assets/img/Fold2_IMG.png";
+import mamografiaPng from "../../assets/img/mamografia.png";
+import mamografiaVetorSvg from "../../assets/img/vetor-mamografia.svg";
 import AimSvg from "../../assets/img/aim.svg";
 import ClipboardSvg from "../../assets/img/clipboard.svg";
 import ClipboardOutSvg from "../../assets/img/clipboard-out.svg";
@@ -35,23 +37,35 @@ export function AboutDama() {
     <Grid as="section" {...sectionGridProps} id="aboutDama">
       <GridItem {...textItemProps}>
         <Heading as="h2" {...headingProps}>
-          DAMA é a sua nova ferramenta de diagnóstico interativo!
+          DAMA é a nova geração de CAD interativo!
         </Heading>
         <Text my="16px" {...textProps}>
-          Utilizamos um <b>avançado algoritmo de aprendizado</b> para conseguir
-          detectar e analisar anormalidades em exames de mamografia e assim
-          gerar um relatório médico preliminar. O profissional da saúde pode
-          então trabalhar a partir dessa base e{" "}
-          <b>aprovar, rejeitar ou corrigir o relatório</b> para fechar o{" "}
-          <b>diagnóstico de câncer de mama</b>.
+          Utiliza algoritmos de <b>deep learning</b> para avaliar as{" "}
+          <b>imagens</b> e a <b>anamnese</b> da mamografia de rastreio. Durante
+          esse processo, anomalias são detectadas para dar suporte à decisão e
+          ao diagnóstico do médico radiologista na detecção do câncer de mama.
         </Text>
         <Text {...textProps}>
-          Todo relatório alimenta o algoritmo e faz com que o sistema de
-          aprendizado inteligente se <b>aperfeiçoe cada vez mais!</b>
+          Combinando a varredura das imagens e a elaboração dos laudos, os
+          achados geram um <b>laudo estruturado</b> de forma <b>automática</b> e{" "}
+          <b>interativa</b>. Os relatórios podem ser aprovados, rejeitados ou
+          corrigidos pelo profissional, retroalimentando os algoritmos e fazendo
+          com que o sistema se{" "}
+          <i>
+            <b>aperfeiçoe</b>
+          </i>{" "}
+          cada vez mais.
         </Text>
       </GridItem>
-      <GridItem {...imageItemProps}>
-        <Image src={Fold2Png} alt="Mulher examinando mamografia" />
+      <GridItem {...photoItemProps}>
+        <Image
+          h="100%"
+          src={mamografiaPng}
+          alt="Mulher examinando mamografia"
+        />
+      </GridItem>
+      <GridItem {...vectorItemProps}>
+        <Image h="100%" src={mamografiaVetorSvg} alt="" />
       </GridItem>
       <GridItem {...ulGridItemProps}>
         <Heading as="h2" {...ulHeadingProps}>
@@ -59,36 +73,30 @@ export function AboutDama() {
         </Heading>
         <HStack as="ul" {...ulStackProps}>
           <VStack as="li" {...liStackProps}>
-            <Image h="90px" src={AimSvg} alt="Detecçao e identificação" />
+            <Image h="90px" src={AimSvg} alt="" />
             <Text {...liTextProps}>
-              <b>Detecção e identificação</b> de anomalias em mamografias
-              digitais
+              <b>Detecção e identificação</b> de anomalias na mamografia de
+              rastreio como segunda leitura
             </Text>
           </VStack>
           <VStack as="li" {...liStackProps}>
-            <Image h="90px" src={ClipboardSvg} alt="Relatório médico" />
+            <Image h="90px" src={ClipboardSvg} alt="" />
             <Text {...liTextProps}>
-              Relatório médico <b>preliminar</b> por imagem
+              <b>Laudo estruturado</b> gerado a partir dos achados anotados nas
+              imagens
             </Text>
           </VStack>
           <VStack as="li" {...liStackProps}>
-            <Image
-              h="90px"
-              src={ClipboardOutSvg}
-              alt="sugestão de diagnóstico"
-            />
+            <Image h="90px" src={ClipboardOutSvg} alt="" />
             <Text {...liTextProps}>
-              Sugestão de diagnóstico <b>BIRADS</b>
+              Sugestão da avaliação e conduta segundo <b>BIRADS</b>
             </Text>
           </VStack>
           <VStack as="li" {...liStackProps}>
-            <Image
-              h="90px"
-              src={ConnectedDotsSvg}
-              alt="Aprendizado sistema de inteligência artificial"
-            />
+            <Image h="90px" src={ConnectedDotsSvg} alt="" />
             <Text {...liTextProps}>
-              <b>Aprendizado contínuo</b> do sistema de inteligência artificial
+              <b>Aprendizado contínuo</b> dos algoritmos de IA com uso do
+              sistema
             </Text>
           </VStack>
         </HStack>

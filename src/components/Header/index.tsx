@@ -74,11 +74,11 @@ export function Header() {
                 <Link {...mobileLinkProps} href="#benefits">
                   Vantagens
                 </Link>
-                <Link {...mobileLinkProps} href="#contact">
-                  Contato
+                <Link {...mobileLinkProps} href="#product">
+                  Produtos
                 </Link>
-                <Link {...mobileLinkProps} href="https://audo.com.br">
-                  Audo
+                <Link {...mobileLinkProps} href="#contact">
+                  Fale conosco
                 </Link>
                 <Link {...whatsappLinkProps}>
                   Entre em contato com a DAMA
@@ -105,11 +105,11 @@ export function Header() {
           <Link {...widescreenLinkProps} href="#benefits">
             Vantagens
           </Link>
-          <Link {...widescreenLinkProps} href="#contact">
-            Contato
+          <Link {...widescreenLinkProps} href="#product">
+            Produtos
           </Link>
-          <Link {...widescreenLinkProps} href="https://audo.com.br">
-            Audo
+          <Link {...widescreenLinkProps} href="#contact">
+            Fale conosco
           </Link>
         </HStack>
       </Flex>

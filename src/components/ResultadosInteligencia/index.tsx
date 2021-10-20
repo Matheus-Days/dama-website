@@ -16,7 +16,7 @@ import { ResultadosSlide } from "../ResultadosSlide";
 import { buttonProps, headingProps } from "./props";
 
 export function ResultadosInteligencia() {
-  const [slideCount, setSlideCount] = useState(0);
+  const [slidecount, setslidecount] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
 
   const isLgOrBigger = useBreakpointValue({
@@ -36,22 +36,22 @@ export function ResultadosInteligencia() {
     slides.forEach((slide) => {
       slide.style.transition = "transform 0.5s ease-in-out";
       slide.style.transform = `translateY(${
-        -1 * slide.clientHeight * slideCount
+        -1 * slide.clientHeight * slidecount
       }px)`;
     });
-  }, [slideCount]);
+  }, [slidecount]);
 
   const sliderLength = sliderRef.current?.childNodes.length || 0;
 
   const nextSlide = () => {
-    if (slideCount + 1 < sliderLength && slideCount >= 0)
-      setSlideCount(slideCount + 1);
-    else setSlideCount(0);
+    if (slidecount + 1 < sliderLength && slidecount >= 0)
+      setslidecount(slidecount + 1);
+    else setslidecount(0);
   };
 
   const prevSlide = () => {
-    if (slideCount - 1 >= 0 && slideCount >= 0) setSlideCount(slideCount - 1);
-    else setSlideCount(sliderLength - 1);
+    if (slidecount - 1 >= 0 && slidecount >= 0) setslidecount(slidecount - 1);
+    else setslidecount(sliderLength - 1);
   };
 
   return (
@@ -65,7 +65,7 @@ export function ResultadosInteligencia() {
         <HStack alignItems="center">
           {isLgOrBigger && (
             <Image
-              src={slideImages[slideCount]}
+              src={slideImages[slidecount]}
               h={{ lg: "240px", xl: "360px", "2xl": "max-content" }}
               alt="Pontos brancos e coloridos"
             />

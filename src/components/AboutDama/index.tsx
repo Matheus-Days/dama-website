@@ -105,6 +105,42 @@ export function AboutDama() {
             Quero entrar em contato
           </Link>
         </Box>
+        <VStack
+          alignItems="center"
+          mt="70px"
+          mb={{
+            base: "40vw",
+            md: "27vw",
+            lg: "27vw",
+            xl: "20vw",
+            "2xl": "25vw",
+          }}
+        >
+          <Heading
+            as="h2"
+            color="#040505"
+            fontSize={{ base: "60px", xl: "80px" }}
+            lineHeight={{ base: "60px", xl: "80px" }}
+            textAlign="center"
+          >
+            Laudo estruturado interativo
+          </Heading>
+          <Text
+            color="#040505"
+            fontWeight="bold"
+            fontSize={{ base: "17px", md: "20px", xl: "20px" }}
+          >
+            seu laudo mais inteligente!
+          </Text>
+          <Text
+            color="#040505"
+            fontSize={{ base: "17px", md: "20px", xl: "20px" }}
+            textAlign="center"
+          >
+            Construímos o laudo automaticamente enquanto você descreve suas
+            impressões diagnósticas.
+          </Text>
+        </VStack>
       </GridItem>
     </Grid>
   );

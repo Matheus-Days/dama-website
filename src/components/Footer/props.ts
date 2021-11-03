@@ -15,10 +15,12 @@ export const gridProps = {
   },
   templateRows: {
     base: "1fr 1fr 1.5fr 1fr 1fr",
-    md: "1fr 1fr 1.5fr 1fr 0.5fr",
+    md: "92px 92px",
     lg: "1fr 1fr",
   },
   backgroundColor: "white",
+  position: "relative",
+  zIndex: "20",
 } as GridProps;
 
 export const img1GridItemProps = {

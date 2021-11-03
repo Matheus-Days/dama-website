@@ -9,7 +9,8 @@ header {
 
 @media (max-width: 62em) {
   header {
-    position: static;
+    position: sticky;
+    top: 0;
     padding: 16px;
     justify-content: center;
   }

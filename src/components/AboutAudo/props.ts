@@ -7,13 +7,13 @@ import {
   TextProps,
 } from "@chakra-ui/react";
 
-import audoPng from "../../assets/img/Audo_IMG.png";
+import audoJpg from "../../assets/img/Audo_IMG.jpg";
 
 export const gridProps = {
   templateColumns: { base: "1fr", lg: "2fr 1fr", xl: "1fr 1fr" },
   templateRows: { base: "2fr 1fr", lg: "1fr" },
   h: "931px",
-  backgroundImage: audoPng,
+  backgroundImage: audoJpg,
   backgroundPosition: "left",
 } as GridProps;
 

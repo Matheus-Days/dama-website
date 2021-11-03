@@ -38,7 +38,7 @@ export function Header() {
 
   if (mobileVersion)
     return (
-      <Flex as="header" justifyContent="center">
+      <Flex as="header" justifyContent="center" zIndex="30" bg="#040505">
         <Image
           w={{ base: "190px", lg: "190px", "2xl": "max-content" }}
           src={LogoLightSvg}
@@ -80,7 +80,11 @@ export function Header() {
                 <Link {...mobileLinkProps} href="#contact">
                   Fale conosco
                 </Link>
-                <Link {...whatsappLinkProps}>
+                <Link
+                  href="https://wa.me/5585991286702"
+                  target="_blank"
+                  {...whatsappLinkProps}
+                >
                   Entre em contato com a DAMA
                   <IconButton {...whatsappIconProps} icon={<FaWhatsapp />} />
                 </Link>
@@ -92,11 +96,12 @@ export function Header() {
     );
   else
     return (
-      <Flex as="header">
+      <Flex as="header" zIndex="30">
         <Image
           w={{ base: "152px", lg: "170px", "2xl": "max-content" }}
           src={LogoLightSvg}
           alt="Logo da DAMA"
+          mr={{ "2xl": "-3.9vw" }}
         />
         <HStack as="nav" {...widescreenNavProps}>
           <Link {...widescreenLinkProps} href="#aboutDama">

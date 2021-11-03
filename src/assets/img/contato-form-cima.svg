@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168.82" height="168.77" viewBox="0 0 168.82 168.77">
+  <g id="Padrão_Form_Cima" transform="translate(-2337.841 2185.214) rotate(90)">
+    <rect id="Rectangle_84" data-name="Rectangle 84" width="56.24" height="56.34" transform="translate(-2072.684 -2506.649)" fill="#14978a"/>
+    <rect id="Rectangle_85" data-name="Rectangle 85" width="56.229" height="56.228" transform="translate(-2185.203 -2394.069)" fill="#db9ac4"/>
+    <path id="Path_651" data-name="Path 651" d="M-2128.974-2394.069h0v56.228H-2185.2A56.228,56.228,0,0,1-2128.974-2394.069Z" fill="#14978a"/>
+    <path id="Path_653" data-name="Path 653" d="M-2185.214-2434.426v-15.883a56.3,56.3,0,0,1,56.228,56.251h-15.876A40.406,40.406,0,0,0-2185.214-2434.426Z" fill="#fff"/>
+    <rect id="Rectangle_87" data-name="Rectangle 87" width="56.24" height="56.34" transform="translate(-2185.214 -2506.649)" fill="#ea3716"/>
+    <rect id="Rectangle_89" data-name="Rectangle 89" width="56.24" height="56.34" transform="translate(-2128.949 -2450.384)" fill="#265ca8"/>
+    <path id="Path_655" data-name="Path 655" d="M-2016.444-2450.359h-56.229v56.228A56.229,56.229,0,0,1-2016.444-2450.359Z" fill="#ea3716"/>
+    <path id="Path_656" data-name="Path 656" d="M-2128.949-2450.421h56.228v-56.228A56.228,56.228,0,0,1-2128.949-2450.421Z" fill="#db9ac4"/>
+    <path id="Path_658" data-name="Path 658" d="M-2072.746-2490.778v-15.883a56.3,56.3,0,0,1,56.228,56.251h-15.876A40.406,40.406,0,0,0-2072.746-2490.778Z" fill="#265ca8"/>
+  </g>
+</svg>

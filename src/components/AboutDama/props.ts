@@ -16,19 +16,19 @@ export const sectionGridProps = {
     "2xl": "1fr 843px",
   },
   gridTemplateRows: {
-    base: "288px 273px 416px 1fr 560px",
-    md: "512px 487px 500px 600px",
-    lg: "384px 365px 1000px",
-    xl: "512px 487px 850px",
-    "2xl": "650px 683px 800px",
+    base: "288px 273px 416px 1fr",
+    md: "512px 487px 1fr",
+    lg: "384px 365px 1fr",
+    xl: "512px 487px 1fr",
+    "2xl": "650px 683px 1fr",
   },
   bg: "#F9F5F5",
   mt: "-1px",
 } as GridProps;
 
 export const textItemProps = {
-  px: { base: "40px", md: "40px", lg: "32px", xl: "96px", "2xl": "142px" },
-  pr: { md: "160px", lg: "" },
+  pl: { base: "40px", md: "40px", lg: "32px", xl: "96px", "2xl": "142px" },
+  pr: { base: "40px", md: "160px", lg: "32px", xl: "64px", "2xl": "112px" },
   pt: { base: "48px", md: "64px", lg: "32px", xl: "96px", "2xl": "142px" },
   gridColumn: { base: "1/3", lg: "1/2" },
   gridRow: { base: "2/4", lg: "1" },
@@ -40,7 +40,7 @@ export const textItemProps = {
 
 export const headingProps = {
   fontSize: { base: "36px", sm: "43px", lg: "32px", xl: "48px", "2xl": "55px" },
-  pr: { md: "80px", lg: "0" },
+  pr: { base: "32px", sm: "80px", lg: "0" },
   pt: { base: "24px", sm: "" },
   color: "#040505",
 } as HeadingProps;
@@ -66,10 +66,10 @@ export const vectorItemProps = {
 } as GridItemProps;
 
 export const ulGridItemProps = {
-  gridRow: { base: "4", md: "3", lg: "2/3" },
+  gridRow: { base: "4", md: "3", lg: "2/4" },
   gridColumn: "1/3",
   zIndex: "10",
-  px: { base: "36px", lg: "80px", "2xl": "144px" },
+  px: { base: "40px", md: "40px", lg: "32px", xl: "96px", "2xl": "142px" },
   mt: { lg: "112px" },
 } as GridItemProps;
 
@@ -107,9 +107,10 @@ export const contactLinkProps = {
   fontSize: { base: "16px", lg: "18px", "2xl": "22px" },
   h: { base: "45px", lg: "57px" },
   w: { base: "342px", lg: "385px" },
-  py: { base: "12px", lg: "18px" },
+  py: { base: "12px", lg: "16px", "2xl": "13px" },
   textAlign: "center",
-  mt: { base: "70px", lg: "100px" },
+  mt: { base: "70px", xl: "100px" },
+  mb: { base: "32px" },
   transition: "box-shadow 0.3s ease-in-out",
   _hover: {
     textDecoration: "none",

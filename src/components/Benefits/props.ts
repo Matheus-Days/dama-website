@@ -1,6 +1,7 @@
 import {
   AccordionItemProps,
   HeadingProps,
+  IconProps,
   GridProps,
   GridItemProps,
   LinkProps,
@@ -9,7 +10,12 @@ import {
 
 export const gridProps = {
   gridTemplateColumns: { base: "1fr", lg: "75% 25%" },
-  gridTemplateRows: { base: "20% 70% 10%", lg: "10% 80% 10%" },
+  gridTemplateRows: {
+    base: "20% 70% 10%",
+    lg: "57px 640px 87px",
+    xl: "93px 720px 94px",
+    "2xl": "93px 800px 114px",
+  },
   mt: { base: "112px" },
 } as GridProps;
 
@@ -32,6 +38,7 @@ export const imageGridItemProps = {
   gridRow: "1/4",
   display: "flex",
   justifyContent: "flex-end",
+  alignItems: "flex-end",
 } as GridItemProps;
 
 export const linkGridItemProps = {
@@ -59,11 +66,17 @@ export const buttonTextProps = {
   color: "white",
   fontStyle: "italic",
   fontWeight: "light",
-  fontSize: { base: "14px", md: "20px", lg: "20px", xl: "24px", "2xl": "40px" },
+  fontSize: { base: "20px", xl: "24px", "2xl": "40px" },
   lineHeight: { base: "30px", lg: "34px", xl: "34px", "2xl": "60px" },
-  borderBottom: "2px solid #fff;",
   textAlign: { base: "left" },
 } as TextProps;
+
+export const accordionIconProps = {
+  color: "white",
+  width: { base: "30px", xl: "40px", "2xl": "55px" },
+  height: { base: "30px", xl: "40px", "2xl": "55px" },
+  alignSelf: { base: "flex-start", lg: "center" },
+} as IconProps;
 
 export const panelTextProps = {
   color: "white",
@@ -75,6 +88,7 @@ export const linkProps = {
   fontSize: { base: "17px", lg: "22px" },
   h: { base: "44px", xl: "50px", "2xl": "57px" },
   w: { base: "300px", xl: "340px", "2xl": "385px" },
+  mt: { base: "44px", lg: "0", xl: "50px", "2xl": "57px" },
   display: "flex",
   justifyContent: "space-evenly",
   alignItems: "center",

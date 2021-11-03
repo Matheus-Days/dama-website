@@ -10,6 +10,8 @@ import {
 import { Settings } from "react-slick";
 
 export const gridProps = {
+  pos: "sticky",
+  top: { base: "78px", lg: "-78px" },
   backgroundColor: "white",
   h: { lg: "614px", xl: "786px", "2xl": "961px" },
   w: "100vw",

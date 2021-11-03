@@ -1,0 +1,175 @@
+#laudo {
+  .slick-prev {
+    color: #575757;
+    position: absolute;
+    height: max-content;
+    width: max-content;
+  }
+
+  .slick-next {
+    color: #575757;
+    position: absolute;
+    height: max-content;
+    width: max-content;
+  }
+
+  .slick-dots {
+    li::after {
+      content: "";
+      position: absolute;
+      right: -30px;
+      bottom: 50%;
+      border-top: solid 0.5px #d4d4d4;
+      transform: scaleY(0.5);
+      width: 30px;
+      cursor: default;
+    }
+
+    li:nth-last-child(1)::after {
+      border-top: none;
+    }
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 16px;
+      button {
+        height: 16px;
+        width: 16px;
+        &::before {
+          color: #d4d4d4;
+          font-size: 8px;
+          opacity: 1;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        border: 1px solid #d4d4d4;
+        border-radius: 12px;
+        &::before {
+          padding: 1px 3px 0 0;
+          color: #ea3716;
+          opacity: 1;
+          content: "•";
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0) {
+  #laudo {
+    .slick-dots {
+      .slick-active {
+        button {
+          &::before {
+            padding: 0 4px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 48em) and (max-width: 62em) {
+  #laudo {
+    .slick-dots {
+      .slick-active {
+        button {
+          &::before {
+            padding: 1px 4px 0 0;
+          }
+        }
+      }
+    }
+
+    .slick-prev {
+      transform: scale(-1);
+      top: 41%;
+      left: -5vw;
+    }
+
+    .slick-next {
+      top: 53%;
+      left: 56.5vw;
+    }
+  }
+}
+
+@media (min-width: 62em) and (max-width: 80em) {
+  #laudo {
+    .slick-dots {
+      .slick-active {
+        button {
+          &::before {
+            padding: 1px 4px 0 0;
+          }
+        }
+      }
+    }
+
+    .slick-prev {
+      transform: scale(-1);
+      top: 43%;
+      left: -4vw;
+    }
+
+    .slick-next {
+      top: 53%;
+      left: 51.5vw;
+    }
+  }
+}
+
+@media (min-width: 80em) {
+  #laudo {
+    .slick-dots {
+      .slick-active {
+        button {
+          &::before {
+            padding: 1px 3px 0 0;
+          }
+        }
+      }
+    }
+
+    .slick-prev {
+      transform: scale(-1);
+      top: 44%;
+      left: -3.5vw;
+    }
+
+    .slick-next {
+      top: 53%;
+      left: 43.5vw;
+    }
+  }
+}
+
+@media (min-width: 96em) {
+  #laudo {
+    .slick-dots {
+      .slick-active {
+        button {
+          &::before {
+            padding: 1px 4px 0 0;
+          }
+        }
+      }
+    }
+
+    .slick-prev {
+      transform: scale(-1.5, 1.5);
+      top: 48%;
+      left: -4vw;
+    }
+
+    .slick-next {
+      transform: scale(1.5, 1.5);
+      top: 48%;
+      left: 62vw;
+    }
+  }
+}

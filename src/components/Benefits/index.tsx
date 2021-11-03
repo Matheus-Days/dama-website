@@ -11,10 +11,12 @@ import {
   Link,
   Text,
   useBreakpointValue,
+  Divider,
 } from "@chakra-ui/react";
 
 import {
   accordionGridItemProps,
+  accordionIconProps,
   accordionItemProps,
   buttonTextProps,
   gridProps,
@@ -45,9 +47,11 @@ export function Benefits() {
       <GridItem {...accordionGridItemProps}>
         <Accordion allowToggle>
           <AccordionItem border="none">
-            <AccordionButton>
+            <AccordionButton
+              justifyContent={{ base: "space-between", md: "normal" }}
+            >
               <Text {...buttonTextProps}>Solução de Baixo Custo</Text>
-              <AccordionIcon color="white" width="30px" height="30px" />
+              <AccordionIcon {...accordionIconProps} />
             </AccordionButton>
             <AccordionPanel>
               <Text {...panelTextProps}>
@@ -56,12 +60,15 @@ export function Benefits() {
               </Text>
             </AccordionPanel>
           </AccordionItem>
+          <Divider />
           <AccordionItem {...accordionItemProps}>
-            <AccordionButton>
+            <AccordionButton
+              justifyContent={{ base: "space-between", md: "normal" }}
+            >
               <Text {...buttonTextProps}>
                 Workstation especializada em mamografia
               </Text>
-              <AccordionIcon color="white" width="30px" height="30px" />
+              <AccordionIcon {...accordionIconProps} />
             </AccordionButton>
             <AccordionPanel>
               <Text {...panelTextProps}>
@@ -72,12 +79,15 @@ export function Benefits() {
               </Text>
             </AccordionPanel>
           </AccordionItem>
+          <Divider />
           <AccordionItem {...accordionItemProps}>
-            <AccordionButton>
+            <AccordionButton
+              justifyContent={{ base: "space-between", md: "normal" }}
+            >
               <Text {...buttonTextProps}>
                 Todas as informações em um só lugar
               </Text>
-              <AccordionIcon color="white" width="30px" height="30px" />
+              <AccordionIcon {...accordionIconProps} />
             </AccordionButton>
             <AccordionPanel>
               <Text {...panelTextProps}>
@@ -87,12 +97,15 @@ export function Benefits() {
               </Text>
             </AccordionPanel>
           </AccordionItem>
+          <Divider />
           <AccordionItem {...accordionItemProps}>
-            <AccordionButton>
+            <AccordionButton
+              justifyContent={{ base: "space-between", md: "normal" }}
+            >
               <Text {...buttonTextProps}>
                 A melhor experiência web de visualização de imagens DICOM
               </Text>
-              <AccordionIcon color="white" width="30px" height="30px" />
+              <AccordionIcon {...accordionIconProps} />
             </AccordionButton>
             <AccordionPanel>
               <Text {...panelTextProps}>
@@ -102,12 +115,15 @@ export function Benefits() {
               </Text>
             </AccordionPanel>
           </AccordionItem>
+          <Divider />
           <AccordionItem {...accordionItemProps}>
-            <AccordionButton>
+            <AccordionButton
+              justifyContent={{ base: "space-between", md: "normal" }}
+            >
               <Text {...buttonTextProps}>
                 Inteligência Artificial Compreensível
               </Text>
-              <AccordionIcon color="white" width="30px" height="30px" />
+              <AccordionIcon {...accordionIconProps} />
             </AccordionButton>
             <AccordionPanel>
               <Text {...panelTextProps}>
@@ -119,12 +135,15 @@ export function Benefits() {
               </Text>
             </AccordionPanel>
           </AccordionItem>
+          <Divider />
           <AccordionItem {...accordionItemProps}>
-            <AccordionButton>
+            <AccordionButton
+              justifyContent={{ base: "space-between", md: "normal" }}
+            >
               <Text {...buttonTextProps}>
                 Interoperabilidade: falamos todas as línguas
               </Text>
-              <AccordionIcon color="white" width="30px" height="30px" />
+              <AccordionIcon {...accordionIconProps} />
             </AccordionButton>
             <AccordionPanel>
               <Text {...panelTextProps}>
@@ -133,11 +152,12 @@ export function Benefits() {
               </Text>
             </AccordionPanel>
           </AccordionItem>
+          <Divider />
         </Accordion>
       </GridItem>
       {isLgOrBigger && (
         <GridItem {...imageGridItemProps}>
-          <Image height="100%" src={PadlockPng} alt="Padlock" />
+          <Image w="100%" src={PadlockPng} alt="Padlock" />
         </GridItem>
       )}
       <GridItem {...linkGridItemProps}>

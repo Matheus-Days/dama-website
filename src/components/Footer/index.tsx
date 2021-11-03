@@ -39,7 +39,7 @@ export function Footer() {
             />
           </GridItem>
           <GridItem gridColumn={{ md: "1" }} gridRow={{ md: "2" }}>
-            <Link href="https://wa.me/85991286702" {...linkProps}>
+            <Link href="https://wa.me/5585991286702" {...linkProps}>
               <Image {...iconImgProps} src={WhatsappSvg} alt="Ícone Whatsapp" />
               +55 (85) 99128-6702
             </Link>

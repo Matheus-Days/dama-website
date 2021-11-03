@@ -74,7 +74,6 @@ export const whatsappIconProps = {
 
 export const widescreenHeaderProps = {
   p: { "2xl": "3rem" },
-  // spacing: { lg: "40px", xl: "60px", "2xl": "100px" },
   pt: "30px",
   pr: { base: "10px", lg: "20px", xl: "30px", "2xl": "40px" },
   justifyContent: "flex-end",

@@ -25,7 +25,6 @@ export function Banner() {
     <Grid as="section" id="banner" {...sectionGridProps}>
       <Center>
         <GridItem {...textItemProps}>
-          {/* grid start and end on props.ts */}
           <Heading as="h1" {...headingProps}>
             DAMA:
             <br /> Prevenção inteligente começa <b>aqui.</b>
